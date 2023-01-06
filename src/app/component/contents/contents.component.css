@@ -1,0 +1,13 @@
+.wrap-box {
+    background-color: #D7CEC7;
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+}
+
+.dream {
+    display: flex;
+    justify-content: center;
+}

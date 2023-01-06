@@ -1,0 +1,31 @@
+.navbar {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: flex;
+    justify-content: center;
+    height: 3vh;
+}
+
+button {
+    background-color: transparent;
+    border: transparent;
+    margin-left: 10%;
+    font-weight: bold;
+    display:inline-block;
+    position: relative;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #76323F;
+    transition: width 0.25s ease-in;
+}
+
+button:hover::before{
+    width: 100%;
+}

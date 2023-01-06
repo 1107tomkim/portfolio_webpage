@@ -1,0 +1,7 @@
+.dream {
+    background-color: bisque;
+    display: flex;
+    border-radius: 25px;
+    justify-content: center;
+    border: solid;
+}
