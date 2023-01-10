@@ -9,6 +9,8 @@ import { ContentsComponent } from './component/contents/contents.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { ContactMeComponent } from './component/contact-me/contact-me.component';
+import { LinkedinComponent } from './component/linkedin/linkedin.component';
+import { GithubComponent } from './component/github/github.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { ContactMeComponent } from './component/contact-me/contact-me.component'
     NavbarComponent,
     ContentsComponent,
     ContactMeComponent,
+    LinkedinComponent,
+    GithubComponent,
   ],
   imports: [
     BrowserModule,

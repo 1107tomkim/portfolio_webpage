@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@300;400;500;600&display=swap');
 
+body {
+    display: flex;
+    width: 100%;
+}
+
 .wrap-box {
     background-image: url("/assets/bg1.jpg");
     background-size: cover;
@@ -8,6 +13,8 @@
     height: 800px;
     font-family: 'Poppins', sans-serif;
     animation: bg-change 30s infinite ease-in-out;
+    border-radius: 10px;
+    flex-direction: row;
 }
 
 @keyframes bg-change {
@@ -34,36 +41,6 @@
     
 }
 
-.all-box {
-    position: relative;
-}
-
-.first-box {
-    float:left;
-    width: 33.33%;
-    height: 5vh;
-    background: #c7c2bf;
-    display: flex;
-    justify-content: center;
-}
-
-.second-box {
-    float:left;
-    width: 33.33%;
-    height: 5vh;
-    background: #e3dedc;
-    display: flex;
-    justify-content: center;
-}
-
-.third-box {
-    float:left;
-    width: 33.33%;
-    height: 5vh;
-    background-color: #edeae8;
-    display: flex;
-    justify-content: center;
-}
 
 span.Hello{
     color: #C09F80;
@@ -132,7 +109,33 @@ span.World {
     }
 }
 
+.first-box p{
+    color: #565656;
+}
+
+.first-box p:hover{
+    color: #0077b5;
+}
+
+.second-box p{
+    color: #726e6b;
+}
+
+.second-box p:hover{
+    color: black;
+}
 
 
+.third-box p{
+    color: #b8b2af;
+}
 
+.third-box p:hover{
+    color: #8b8887;
+}
+
+.bottom-three {
+    padding-top: 3vh;
+    font-family: 'Poppins', sans-serif;
+} 
 

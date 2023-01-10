@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    width: 100%;
+}
+
+.github {
+    background-image: url("/assets/bgn1.jpg") ;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 800px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    flex-direction: row;
+}
