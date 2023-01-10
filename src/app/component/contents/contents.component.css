@@ -1,13 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@300;400;500;600&display=swap');
+
 .wrap-box {
-    background-color: #D7CEC7;
+    background-image: url("/assets/bg1.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 800px;
+    font-family: 'Poppins', sans-serif;
+    animation: bg-change 30s infinite ease-in-out;
 }
 
-.about-me {
+@keyframes bg-change {
+    0%
+    {
+        background-image: url("/assets/bg1.jpg");
+    }
+    25%
+    {
+        background-image: url("/assets/bg2.jpg");
+    }
+    50%
+    {
+        background-image: url("/assets/bg3.jpg");
+    }    
+    75%
+    {
+        background-image: url("/assets/bg4.jpg");
+    }
+    100%
+    {
+        background-image: url("/assets/bg1.jpg");
+    }
+    
+}
+
+.all-box {
+    position: relative;
+}
+
+.first-box {
+    float:left;
+    width: 33.33%;
+    height: 5vh;
+    background: #c7c2bf;
     display: flex;
     justify-content: center;
 }
 
-.dream {
+.second-box {
+    float:left;
+    width: 33.33%;
+    height: 5vh;
+    background: #e3dedc;
     display: flex;
     justify-content: center;
 }
+
+.third-box {
+    float:left;
+    width: 33.33%;
+    height: 5vh;
+    background-color: #edeae8;
+    display: flex;
+    justify-content: center;
+}
+
+span.Hello{
+    color: #C09F80;
+    font-size: 150px;
+    border:transparent;
+    display: inline-block;
+    position: relative;
+    width: 0;
+}
+
+span.Hello:hover {
+    color:#76323F;
+    font-size: 180px;
+    width: 29%;
+    text-shadow: 0.5px 0.5px 1px black;
+
+}
+
+span.World {
+    color: #76323F;
+    font-size: 50px;
+    padding-top: 120px;
+    padding-left: 10px;
+}
+
+
+.top-section {
+    display: flex;
+    padding-left: 16vh;
+    padding-top: 15vh;
+}
+
+.paragraph {
+    position: relative;
+    padding-left: 8vh;
+    max-width: 750px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #726e6b;
+}
+
+.paragraph:hover{
+    color: transparent;
+    font-weight:bolder;
+    background-image: linear-gradient(to right, #D7CEC7,#565656,#76323F,#C09F80);
+    -webkit-background-clip: text; 
+    animation: animate 20s linear infinite;
+    background-size: 1000%;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        background-position: 0% 100%;
+    }
+    50%
+    {
+        background-position: 100% 0%;
+    }
+    100%
+    {
+        background-position: 0% 100%;
+    }
+}
+
+
+
+
+

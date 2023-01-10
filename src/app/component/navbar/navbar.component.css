@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@300;400;500;600&display=swap');
+
 .navbar {
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 1.5%;
+    padding-bottom: 2.5%;
     display: flex;
     justify-content: center;
     height: 3vh;
+    min-width: 400;
+    font-family: 'Poppins', sans-serif;
+    /* background: rgb(86,86,86);
+    background: linear-gradient(90deg, rgba(86,86,86,1) 0%, rgba(215,206,199,1) 0%, rgba(192,159,128,1) 100%); */
+
 }
 
 button {
@@ -13,6 +20,10 @@ button {
     font-weight: bold;
     display:inline-block;
     position: relative;
+}
+
+.first-button {
+    margin-left: 0%;
 }
 
 button::before {
@@ -28,4 +39,8 @@ button::before {
 
 button:hover::before{
     width: 100%;
+}
+
+button:hover {
+    color: #76323F;
 }

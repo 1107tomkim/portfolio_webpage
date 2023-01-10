@@ -6,8 +6,9 @@ import { AppComponent } from './app.component';
 import { ComponentComponent } from './component/component.component';
 import { NavbarComponent } from './component/navbar/navbar.component';
 import { ContentsComponent } from './component/contents/contents.component';
-import { DreamComponent } from './component/dream/dream.component';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
+import { ContactMeComponent } from './component/contact-me/contact-me.component';
 
 @NgModule({
   declarations: [
@@ -15,11 +16,13 @@ import { DreamComponent } from './component/dream/dream.component';
     ComponentComponent,
     NavbarComponent,
     ContentsComponent,
-    DreamComponent
+    ContactMeComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
